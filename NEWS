@@ -103,6 +103,7 @@ documents those changes that are of interest to users and administrators.
     node).
  -- slurmd - allow multiple comma-separated controllers to be specified in
     configless mode with --conf-server
+ -- scrontab - add ability to update crontab from a file or standard input.
 
 * Changes in Slurm 20.11.8
 ==========================

@@ -83,6 +83,7 @@ COMMAND CHANGES (see man pages for details)
  -- sbcast / srun --bcast - removed support for zlib compression. lz4 is vastly
     superior in performance, and (counter-intuitively) zlib could provide worse
     performance than no compression at all on many systems.
+ -- scrontab - add ability to update crontab from a file or standard input.
 
 API CHANGES
 ===========
