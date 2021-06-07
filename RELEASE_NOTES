@@ -63,6 +63,8 @@ HIGHLIGHTS
  -- Distinguish queued reboot requests (REBOOT@) from issued reboots (REBOOT^).
  -- auth/jwt - add support for RS256 tokens. Also permit the username in the
     'username' field in addition to the 'sun' (Slurm UserName) field.
+ -- Add support for automatically detecting and broadcasting executable shared
+    object dependencies for sbcast and srun --bcast.
 
 CONFIGURATION FILE CHANGES (see man appropriate man page for details)
 =====================================================================
@@ -76,6 +78,7 @@ CONFIGURATION FILE CHANGES (see man appropriate man page for details)
  -- Removed DefaultStorage{Host,Loc,Pass,Port,Type,User} options.
  -- Removed CacheGroups, CheckpointType, JobCheckpointDir, MemLimitEnforce,
     SchedulerPort, SchedulerRootFilter options.
+ -- Added BcastParameters=send_libs and BcastExclude options.
 
 COMMAND CHANGES (see man pages for details)
 ===========================================
@@ -95,6 +98,7 @@ COMMAND CHANGES (see man pages for details)
  -- SALLOC_THREADS_PER_CORE and SBATCH_THREADS_PER_CORE have been added as
     input environment variables for salloc and sbatch, respectively. They do
     the same thing as --threads-per-core.
+ -- Added sbcast/srun --send-libs, sbcast --exclude and srun --bcast-exclude.
 
 API CHANGES
 ===========

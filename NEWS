@@ -115,6 +115,8 @@ documents those changes that are of interest to users and administrators.
  -- Set the maximum number of open files per process to 4096 to avoid
     performance issues when closing the entire range with closeall().
  -- auth/jwt - add support for RS256 tokens.
+ -- Add support for automatically detecting and broadcasting executable shared
+    object dependencies for sbcast and srun --bcast.
 
 * Changes in Slurm 20.11.8
 ==========================
