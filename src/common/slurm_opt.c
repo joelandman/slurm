@@ -1031,7 +1031,7 @@ static int arg_set_cpu_bind(slurm_opt_t *opt, const char *arg)
 		return SLURM_ERROR;
 
 	if (slurm_verify_cpu_bind(arg, &opt->srun_opt->cpu_bind,
-				  &opt->srun_opt->cpu_bind_type, 0))
+				  &opt->srun_opt->cpu_bind_type))
 		exit(-1);
 
 	return SLURM_SUCCESS;
