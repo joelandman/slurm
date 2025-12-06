@@ -407,7 +407,7 @@ according to the Slurm
 Summary: Slurm REST API translator
 Group: System Environment/Base
 Requires: %{name}%{?_isa} = %{version}-%{release}
-BuildRequires: http-parser-devel
+BuildRequires: llhttp-devel
 %if %{defined suse_version}
 BuildRequires: libjson-c-devel
 %else
